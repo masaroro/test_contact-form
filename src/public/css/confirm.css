@@ -7,6 +7,7 @@
 .confirm__heading {
     margin-bottom: 40px;
     text-align: center;
+    color: #8C8177;
 }
 
 .form {
@@ -20,14 +21,15 @@
 
 .confirm-table__inner {
     width: 100%;
+    table-layout: fixed;
 }
 
 .confirm-table__header {
     padding: 15px;
     width: 20%;
+    color:#fff;
     border-bottom: 1px solid #ddd;
-    background-color: #eee;
-    font-weight: bold;
+    background-color:#B9A89A;
 }
 
 .confirm-table__text {
@@ -39,6 +41,12 @@
     width: 100%;
     outline: none;
     border: none;
+    color: #8C8177;
+}
+
+.confirm-table__text-name input {
+    display: inline-block;
+    width: fit-content;
 }
 
 .confirm-table__row:last-child .confirm-table__header,
@@ -53,11 +61,10 @@
 
 .form__button-submit {
     padding: 10px;
-    width: 30%;
-    height: 50px;
+    width: 15%;
+    height: 40px;
     border: none;
-    border-radius: 3px;
-    background: #000;
+    background:#81756B;
     color: #fff;
     cursor: pointer;
 }
