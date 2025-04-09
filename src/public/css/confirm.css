@@ -13,6 +13,7 @@
 .form {
     margin: 0 auto;
     width: 70%;
+    background-color: red;
 }
 
 .confirm-table {
@@ -42,11 +43,6 @@
     outline: none;
     border: none;
     color: #8C8177;
-}
-
-.confirm-table__text-name input {
-    display: inline-block;
-    width: fit-content;
 }
 
 .confirm-table__row:last-child .confirm-table__header,

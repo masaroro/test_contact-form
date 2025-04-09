@@ -1,6 +1,6 @@
 .contact-form__content {
     margin: 0 auto;
-    padding: 30px 15px;
+    padding: 20px 15px;
     max-width: 1230px;
     color: #8C8177;
 }
@@ -41,7 +41,7 @@
 }
 
 .form__input--text input,.form__input--name-item input,
-.form__input--tel-item input,.form__input--textarea textarea {
+.form__input--tel input,.form__input--textarea textarea {
     padding: 10px 20px;
     border:none;
     background:#F4F4F4;
@@ -67,6 +67,10 @@
     display: flex;
 }
 
+.form__input--tel {
+    justify-content: space-between;
+}
+
 .form__input--radio-item {
     margin-right: 40px;
 }
@@ -88,13 +92,14 @@
     border-color:#82756A;
 }
 
-.form__input--tel-item input{
-    width: 80%;
+.form__input--tel input{
+    width: 30%;
 }
-.form__input--tel-item input::placeholder {
+.form__input--tel input::placeholder {
     text-align: center;
 }
 .form__input--tel-hyphen {
+    margin: 0 10px;
     display: grid;
     place-items: center;
     color: #BDB0A5;
@@ -110,7 +115,7 @@
 }
 
 .form__input--textarea textarea {
-    height: 180px;
+    height: 100px;
 }
 
 .form__button {
