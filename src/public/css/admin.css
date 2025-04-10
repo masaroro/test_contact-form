@@ -1,0 +1,30 @@
+.header-utilities {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.header__logo {
+    color: #8C8177;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.header-nav__item {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(0, 25%);
+}
+
+.header-nav__button-submit {
+    margin-right: 30px;
+    padding: 5px 20px;
+    color: #D9C6B5;
+    background: #F4F4F4;
+    border: 1px solid #D9C6B5;
+    cursor: pointer;
+    text-decoration: none;
+}

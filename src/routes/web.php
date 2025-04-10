@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,7 @@ use App\Http\Controllers\ContactController;
 */
 
 // Route::get('/', function () {
-//     return view('welcome');
+//     return view('register');
 // });
 
 Route::get('/',[ContactController::class,'index']);
@@ -23,3 +24,6 @@ Route::post('/confirm',[ContactController::class,'confirm']);
 Route::post('/confirm/action', [ContactController::class, 'handleConfirmAction'])->name('handle.confirm.action');
 Route::post('/thanks',[ContactController::class,'store']);
 
+Route::middleware('auth')->group(function () {
+    Route::get('/admin', [AuthController::class, 'index']);
+});

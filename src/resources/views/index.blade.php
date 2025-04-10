@@ -4,6 +4,13 @@
     <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
 @endsection
 
+@section('header')
+    <a class="header__logo" href="/">
+        FashionablyLate
+    </a>
+@endsection
+
+
 @section('content')
     <div class="contact-form__content">
         <div class="contact-form__heading">
@@ -173,7 +180,7 @@
                         <textarea name="detail" placeholder="お問い合わせ内容をご記載ください">{{ old('detail',$contact['detail'] ?? '') }}</textarea>
                     </div>
                     <div class="form__error">
-                        @error('deail')
+                        @error('detail')
                             {{ $message }}
                         @enderror
                     </div>

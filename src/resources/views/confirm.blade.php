@@ -4,6 +4,12 @@
     <link rel="stylesheet" href="{{ asset('css/confirm.css') }}" />
 @endsection
 
+@section('header')
+    <a class="header__logo" href="/">
+        FashionablyLate
+    </a>
+@endsection
+
 @section('content')
     <div class="confirm__content">
         <div class="confirm__heading">
@@ -39,7 +45,10 @@
                     <tr class="confirm-table__row">
                         <th class="confirm-table__header"></th>
                         <td class="confirm-table__text">
-                            <input type="tel" name="tel" value="{{$contact['tel]}}" readonly />
+                            <input type="tel" name="tel" value="{{$contact['tel']}}" readonly />
+                            <input type="hidden" name="tel_first" value="{{$contact['tel_first']}}" readonly />
+                            <input type="hidden" name="tel_second" value="{{$contact['tel_second']}}" readonly />
+                            <input type="hidden" name="tel_third" value="{{$contact['tel_third']}}" readonly />
                         </td>
                     </tr>
                     <tr class="confirm-table__row">

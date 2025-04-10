@@ -30,7 +30,7 @@ class ContactController extends Controller
             if ($request->input('submit_action') === 'send') {
                 return $this->store($request);
             } elseif ($request->input('submit_action') === 'edit') {
-                $contact = $request->only(['first_name','last_name','gender', 'email', 'tel','address','building','category_id','detail']);
+                $contact = $request->only(['first_name','last_name','gender', 'email', 'tel_first','tel_second','tel_third','address','building','category_id','detail']);
                 return redirect('/')->withInput($contact);
             }
         }

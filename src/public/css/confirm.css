@@ -1,3 +1,10 @@
+.header__logo {
+    color: #8C8177;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 36px;
+}
+
 .confirm__content {
     margin: 0 auto;
     padding: 30px 15px;
@@ -13,7 +20,6 @@
 .form {
     margin: 0 auto;
     width: 70%;
-    background-color: red;
 }
 
 .confirm-table {
@@ -53,14 +59,30 @@
 .form__button {
     margin-top: 30px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 .form__button-submit {
     padding: 10px;
-    width: 15%;
+    width: 10%;
     height: 40px;
     border: none;
     background:#81756B;
     color: #fff;
     cursor: pointer;
+}
+
+.form__button-submit-edit{
+    padding: 10px;
+    width: 10%;
+    height: 40px;
+    border: none;
+    color: #8C8177;
+    text-decoration: underline;
+    background-color: #fff;
+    cursor: pointer;
+    position:absolute;
+    transform: translate(150%, 0%);
 }
