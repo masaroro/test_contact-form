@@ -32,11 +32,11 @@
                 </div>
                 <div class="login-form__item-input">
                     <input type="email" name="email" placeholder="例:test@example.com" value="{{ old('email') }}"/>
+                    <div class="error">
                     @error('email')
-                        <div class="error">
                             {{ $message }}
-                        </div>
                     @enderror
+                    </div>
                 </div>
             </div>
             <div class="login-form__item">
@@ -45,11 +45,11 @@
                 </div>
                 <div class="login-form__item-input">
                     <input type="password" name="password" placeholder="例:coachtech1106" value=""/>
+                    <div class="error">
                     @error('password')
-                        <div class="error">
                             {{ $message }}
-                        </div>
                     @enderror
+                    </div>
                 </div>
             </div>
             <div class="login-form__button">

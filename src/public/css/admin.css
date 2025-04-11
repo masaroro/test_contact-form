@@ -4,24 +4,248 @@
     position: relative;
     align-items: center;
 }
-
 .header__logo {
     color: #8C8177;
     text-decoration: none;
     font-weight: bold;
     font-size: 36px;
 }
-
 .header-nav__item {
     position: absolute;
     right: 0;
     top: 0;
     transform: translate(0, 25%);
 }
-
 .header-nav__button-submit {
     margin-right: 30px;
     padding: 5px 20px;
+    color: #D9C6B5;
+    background: #F4F4F4;
+    border: 1px solid #D9C6B5;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.admin__content{
+    margin:0 auto;
+    max-width: 1230px;
+    padding: 0 15px;
+}
+.admin__heading{
+    padding: 15px 5px;
+    margin: 0 auto;
+    text-align: center;
+    color: #8B7969;
+    font-size: 24px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.search-form__item {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 40px;
+}
+.search-form__item input {
+    padding: 10px;
+    height: 100%;
+    margin-right: 20px;
+}
+.search-form__item select {
+    padding: 10px;
+    height: 100%;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.search-form__item-text {
+    width: 40%;
+    border: 1px solid #ddd;
+}
+.search-form__item-gender {
+    width: 10%;
+}
+.search-form__item-category {
+    width: 30%;
+}
+.search-form__item-date {
+    width: 20%;
+    cursor: pointer;
+}
+
+
+.search-form__button {
+    width: 20%;
+    height: 40px;
+    display: flex;
+}
+.search-form__button-submit,.search-form__button-reset{
+    width: 100%;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.search-form__button-submit{
+    margin-right: 20px;
+    background-color: #81756B;
+}
+.search-form__button-reset {
+    background-color:#D9C6B5;
+}
+
+.admin__utilities{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+}
+.admin__utilities-item,.admin__utilities-pagination{
+    width: auto;
+    height: 100%;
+}
+.admin__utilities-button{
+    padding: 10px 20px;
+    height: 100%;
+    background-color:#EDEAE6;
+    color:#8B7969;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    /* 中央寄せ */
+}
+.pagination-list {
+    display: flex;
+    list-style: none;
+    /* デフォルトのリストマーカーを削除 */
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    /* 全体を囲む枠線 */
+    border-radius: 5px;
+    overflow: hidden;
+    /* 角丸が適用されるように */
+}
+.pagination-item {
+    display: flex;
+}
+.pagination-item a,
+.pagination-item span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 30px;
+    /* 適切な幅 */
+    height: 30px;
+    /* 適切な高さ */
+    padding: 5px;
+    text-decoration: none;
+    color:#81756B;
+    /* リンクの文字色 */
+    border-right: 1px solid #ccc;
+    /* 区切り線 */
+}
+.pagination-item:first-child a,
+.pagination-item:first-child span {
+    border-left: none;
+    /* 最初の要素の左ボーダーを削除 */
+}
+.pagination-item:last-child a,
+.pagination-item:last-child span {
+    border-right: none;
+    /* 最後の要素の右ボーダーを削除 */
+}
+.pagination-item.disabled span {
+    color: #6c757d;
+    /* 無効なボタンの文字色 */
+    cursor: default;
+}
+.pagination-item.active span {
+    background-color:#81756B;
+    /* 現在のページの背景色 */
+    color: white;
+}
+.pagination-item a:hover {
+    background-color: #f8f9fa;
+    /* ホバー時の背景色 */
+}
+
+.contact-table {
+    margin: 0 auto;
+    width: 100%;
+    text-align: left;
+}
+.contact-table__inner {
+    width: 100%;
+}
+.contact-table__row {
+    border: 1px solid #ddd;
+    height: 100%;
+}
+.contact-table__header,.contact-form {
+    padding: 10px 40px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    color: #8B7969;
+}
+.contact-table__header {
+    background-color: #8B7969;
+    color: #fff;
+}
+.contact-form {
+    width: 100%;
+}
+.contact-table__header span:first-of-type,.contact-form__item:first-of-type{
+    width: 15%;
+}
+.contact-table__header span:nth-of-type(2),
+.contact-form__item:nth-of-type(2) {
+    width: 15%;
+}
+.contact-table__header span:nth-of-type(3),
+.contact-form__item:nth-of-type(3) {
+    width: 30%;
+}
+.contact-table__header span:nth-of-type(4),
+.contact-form__item:nth-of-type(4) {
+    width: 30%;
+}
+.contact-table__header span:nth-of-type(5),
+.contact-form__item:nth-of-type(5) {
+    width: 10%;
+}
+
+.contact-form__item input{
+    width: 100%;
+    height: 100%;
+}
+.contact-table__header-span,.contact-form__item{
+    padding: 10px 0;
+}
+
+.contact-form__button {
+    margin: auto auto;
+    display: flex;
+    height: 100%;
+}
+
+.contact-form__button-submit {
+    padding: 5px 20px;
+    width: 100%;
     color: #D9C6B5;
     background: #F4F4F4;
     border: 1px solid #D9C6B5;

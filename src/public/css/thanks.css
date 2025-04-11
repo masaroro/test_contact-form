@@ -33,17 +33,14 @@
     font-size: 100%;
 }
 
-
 .thanks__content-background h1 {
     color: #F9F8F7;
     font-size: 5vw;
 }
 
 .thanks__content {
-    margin-bottom: 40px;
     text-align: center;
     margin: 0 auto;
-    display: block;
     width: 50%;
     z-index: 0;
 }
@@ -53,17 +50,13 @@
     font-size: 30px;
 }
 
-.home__button{
-    margin-top: 40px;
-}
-
-.home__button-submit {
-    padding: 10px;
-    width: 20%;
+.thanks__HOME{
+    margin-top: 100px;
+    padding: 10px 20px;
     height: 50px;
-    font-size: 20px;
-    border: none;
     background: #81756B;
+    border: 1px solid #D9C6B5;
+    text-decoration: none;
     color: #fff;
     cursor: pointer;
 }

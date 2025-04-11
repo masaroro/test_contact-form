@@ -32,8 +32,10 @@
 
 .error {
     height: 20px;
+    font-size: 15px;
     color: #ff0000;
     text-align: left;
+    margin-bottom: 10px;
 }
 
 .login__content {
@@ -79,13 +81,12 @@
     background: #F4F4F4;
     color: #BDB0A5;
     appearance: none;
-    margin-bottom: 30px;
     width: 100%;
 }
 
 .login-form__button-submit {
     padding: 10px 30px;
-    margin-top: 30px;
+    margin-top: 40px;
     border: none;
     background: #81756B;
     color: #fff;

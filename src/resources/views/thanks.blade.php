@@ -17,12 +17,7 @@
                 <div class="thanks__content-heading">
                     <h2>お問い合わせありがとうございました</h2>
                 </div>
-                <form class="form" action="/" method="get">
-                    @csrf
-                    <div class="home__button">
-                        <button class="home__button-submit" type="submit">Home</button>
-                    </div>
-                </form>
+                <a class="thanks__HOME" href="/">HOME</a>
             </div>
         </div>
         <div class="thanks__content-background">

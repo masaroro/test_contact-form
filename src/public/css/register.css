@@ -32,8 +32,10 @@
 
 .error {
     height: 20px;
+    font-size: 15px;
     color: #ff0000;
     text-align: left;
+    margin-bottom: 10px;
 }
 
 .register__content {
@@ -80,10 +82,6 @@
     color: #BDB0A5;
     appearance: none;
     width: 100%;
-}
-
-.register-form__item-input{
-    margin-bottom: 30px;
 }
 
 .register-form__button-submit {
